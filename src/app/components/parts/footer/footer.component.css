@@ -1,0 +1,42 @@
+
+.signageandgraphicdesignForFooter {
+    width: 100%;
+    /* padding: 0 7%; */
+    display: table;
+    margin: 0;
+    max-width: none;
+    /* background-color: #373B44; */
+    /* height: 100vh; */
+
+    /*added here*/
+    background: url("/assets/images/BACKGROUND\ IMAGE.jpg");
+    /* opacity: 0.9; */
+    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    /* background-position: top; */
+    /* background-attachment: fixed; */
+    /*added here*/
+}
+
+.footer_icns{
+    margin-top: 4%;
+    font-size: 20px !important;
+}
+
+.footer_img{
+    width: 20%;
+    /* height: 20%; */
+    margin-top: -20%;
+    /* margin-right: -15%; */
+    margin-left: 95% !important;
+}
+
+.footDigit{
+    margin-top: 20%;
+}
+
+
+.newfooteerr{
+    padding-left: 15%;
+    padding-right: 15%;
+}

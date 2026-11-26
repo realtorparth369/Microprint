@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'lights';
+    src: local("assets/fonts/new/FUTURA45LIGHT.TTF");
+}
+
+@font-face {
+    font-family: 'bolds';
+    src: local("assets/fonts/new/FUTURA75BOLD.TTF");
+}
+
+@font-face {
+    font-family: 'mediums';
+    src: local("assets/fonts/new/FUTURA65MEDIUM.TTF");
+}
+
+@font-face {
+    font-family: 'regular';
+    src: local("assets/fonts/new/FUTURA55REGULAR.TTF");
+}
+
+@font-face {
+    font-family: 'mermaid';
+    src: local("assets/fonts/new/Mermaid1001.ttf");
+}
+
+.top_service_fontmedium {
+    font-family: 'lights';
+}
+
+
+p {
+    font-family: 'lights';
+}
+
+h2 {
+    font-family: 'bolds';
+}
+
+h3 {
+    font-family: 'bolds';
+}
+
+h4 {
+    font-family: 'bolds';
+}
+
+h5 {
+    font-family: 'bolds';
+}
+
+h6 {
+    font-family: 'bolds';
+}
+
+h1 {
+    font-family: 'bolds';
+}
+
+
+
+
+.home_carousel {
+    width: 100%;
+    height: 400px;
+    /* margin-top: -45px; */
+    /* margin: 0 auto */
+}
+
+
+@media (max-width:700px) {
+    .home_carousel {
+        width: 100%;
+        height: 400px;
+        margin-top: -45px;
+        /* margin: 0 auto */
+    }
+}
+
+
+.graphic_design_img {
+    width: 70% !important;
+    margin-left: 100px;
+}
+
+
+.branding_identity_fsection_newimg {
+    width: 30%;
+    height: 30%;
+    margin-left: 45%;
+    margin-top: -17%;
+}
+
+@media (min-width: 600px) {
+    .branding_identity_fsection_newimg {
+        width: 30%;
+        height: 30%;
+        margin-left: 45%;
+        margin-top: -24%;
+    }
+}
+
+.brand_identity_1_img {
+    width: 30%;
+    height: 30%;
+    margin-top: 18%;
+}
+
+.sketch_img {
+    width: 60%;
+    height: 60%;
+    padding-right: 10% !important;
+    margin-top: 8%;
+}
+
+.brand_identity_2_img {
+    width: 30%;
+    height: 30%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.brand_identity_3_img {
+    width: 35%;
+    height: 35%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.brand_identity_4_img {
+    width: 30%;
+    height: 30%;
+    padding: 5%;
+}
+
+.colset {
+    display: flex;
+    flex-direction: column;
+}
+
+.marketing_strategy_1_img {
+    width: 25%;
+    height: 25%;
+    margin-top: 4% !important;
+    margin-left: 3%;
+}
+
+.marketing_strategy_2_img {
+    width: 15%;
+    height: 15%;
+    margin-top: 6%;
+    margin-left: 3%;
+}
+
+.marketing_strategy_3_img {
+    width: 50%;
+    height: 50%;
+    margin-left: 30% !important;
+    margin-top: -35%;
+}
+
+.marketing_strategy_4_img {
+    width: 70%;
+    height: 70%;
+    margin-left: 15% !important;
+}
+
+.marketing_strategy_5_img {
+    width: 15%;
+    height: 15%;
+    /* width: 170px;
+    height: 252px; */
+    margin-left: 80%;
+    margin-top: -100%;
+}
+
+.marketing_strategy_6_img {
+    width: 35%;
+    height: 35%;
+    margin-left: 20%;
+    margin-top: -10%;
+}
+
+.marketing_strategy_7_img {
+    width: 40%;
+    height: 40%;
+    margin-left: 55%;
+    margin-top: -50%;
+}
+
+.packaging_design {
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.packaging_design_1_img {
+    width: 50%;
+    height: 50%;
+    padding: 1%;
+}
+
+.packaging_design_2_img {
+    width: 40% !important;
+    height: 50% !important;
+    margin-left: 4%;
+    margin-top: -4%;
+    padding: 1%;
+}
+
+.packaging_design_3_img {
+    width: 40%;
+    height: 40%;
+    margin-left: -37%;
+    padding: 3%;
+    margin-top: -6%;
+}
+
+@media (min-width:600px) {
+    .packaging_design_3_img {
+        width: 40%;
+        height: 40%;
+        margin-left: -37%;
+        padding: 3%;
+        margin-top: -2%;
+    }
+}
+
+.packaging_design_4_img {
+    width: 40%;
+    height: 40%;
+    padding: 3%;
+    margin-left: 8%;
+    margin-top: -6%;
+}
+
+.packaging_design_5_img {
+    width: 35%;
+    height: 35%;
+    padding: 3%;
+    margin-left: 8%;
+    margin-top: -6%;
+    margin-bottom: 3%;
+}
+
+.pub_colla {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.publication_collaterals_1_img {
+    width: 50%;
+    height: 90%;
+}
+
+.publication_collaterals_2_img {
+    width: 20%;
+    height: 52%;
+    margin-left: 3%;
+}
+
+.publication_collaterals_3_img {
+    width: 18%;
+    height: 52%;
+    margin-left: 3%;
+}
+
+.publication_collaterals_4_img {
+    width: 40%;
+    height: 90%;
+}
+
+.publication_collaterals_5_img {
+    width: 50%;
+    height: 110%;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+.publication_collaterals_6_img {
+    width: 35%;
+    height: 35%;
+    margin-left: 50%;
+    margin-top: -25%;
+}
+
+@media (min-width:600px) {
+    .publication_collaterals_6_img {
+        width: 35%;
+        height: 35%;
+        margin-left: 50%;
+        margin-top: -30%;
+    }
+}
+
+.environmental_graphic_part {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.envir_discr {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.environmental_graphic_1_img {
+    width: 50%;
+    height: 90%;
+}
+
+/* .environmental_graphic_1_img_mobile {
+    width: 25%;
+    height: 80%;
+} */
+
+.environmental_graphic_2_img {
+    width: 30%;
+    height: 90%;
+}
+
+.environmental_graphic_3_img {
+    margin-top: 50% !important;
+    width: 25%;
+    height: 41%;
+}
+
+
+.illustration_1_img {
+    width: 40%;
+    height: 80%;
+}
+
+.illustration_2_img {
+    width: 40%;
+    height: 80%;
+    margin-left: 3%;
+}
+
+.illustration_3_img {
+    width: 35%;
+    height: 35%;
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+@media (min-width:600px) {
+    .illustration_3_img {
+        width: 35%;
+        height: 35%;
+        margin-left: 50%;
+        margin-top: -30%;
+    }
+}
+
+.illustration_part {
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+
+
+/* .publication_collaterals_mobile{
+    margin-top: 15%;
+} */
+
+
+.center_section {
+    width: 100%;
+}
+
+.center_section_4 {
+    width: 100%;
+    margin-top: -12%;
+}
+
+
+
+.center_section_4_mobile {
+    margin-top: 270px;
+    /* height: 15% !important; */
+}
+
+.center_section_4_img_mobile {
+    margin-top: 3%;
+    /* padding-bottom: -35% !important; */
+}
+
+
+
+.graphicdesc {
+    padding-right: 10%;
+}
+
+
+.marketingdesc {
+    padding-right: 5%;
+}
+
+.publicationdesc {
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+.illustrationdesc {
+    padding-right: 5%;
+    /* padding-left: 2%; */
+}

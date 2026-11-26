@@ -1,0 +1,15 @@
+<div class="slider" >
+  <div>
+    <div (click)="goToPrevious()" class="leftArrow">❰</div>
+    <div (click)="goToNext()" class="rightArrow">❱</div>
+  </div>
+  <div class="slide" [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"></div>
+  <!-- <p class="name h3">VIBRANT</p> -->
+  <!-- <p class="name2 h3">SHARP</p> -->
+  <!-- <p class="slidetext h4">Unmatchable printing solutions for all your printing needs</p> -->
+  <div class="dotsContainer">
+    <div *ngFor="let slide of slides2; let slideIndex = index" class="dottt" (click)="goToSlide(slideIndex)">
+      ●
+    </div>
+  </div>
+</div>

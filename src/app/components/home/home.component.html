@@ -1,0 +1,969 @@
+<app-header></app-header>
+
+
+<!-- <section class="banner overflow-hidden">
+
+    <div class="home_carousel">
+        <image-slider [slides]="slides"></image-slider>
+    </div>
+</section> -->
+
+<div class="modal modal-container" id="modalContainer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-content">
+        <span class="modal-close" data-dismiss="modal">&times;</span>
+
+        <div class="container signageandgraphicdesign2" style="padding: 25px;">
+            <div class="row">
+                <div class="col-md-4 align-items-center text-start" style="border-right: solid 1px rgb(188, 187, 187);">
+                    <p class="text-start" style="color: #bdbbbb; font-weight: 900; font-size: 60px;">Let's Connect
+                    </p>
+                    <p style="font-size: 15px;">Still can’t find what you are looking for?<br>
+                        We can definitely help you out in person<br>
+                        or over the call!
+                        <br>
+                        <br>
+                        Just drop by our Main Office or Branch office,<br>
+                        Monday to Friday; 9AM to 5PM
+                    </p>
+                    <br>
+                    <button class="btn btn-dark rounded-pill">CALL US TODAY</button>
+                    <p class="m-2">+1 (306) 525 8878 | +1 (587) 524 9592 </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7 text-start pl-4">
+                    <h2 style="font-weight: 600;" class="">Have a design, print, signage
+                        or wayfinding project in mind?</h2>
+                    <p class="mt-2" style="font-size: 18px;">Simply fill out your details and we will get back to
+                        you<br>
+                        in 5 -10 business days, or even quicker!</p>
+                    <form class="text-center" [formGroup]="connectwithusForm">
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Your Name*</label><input
+                                [formControl]="connectwithusForm.controls['name']" name="name" type="text"
+                                class="w-50 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Company*</label><input
+                                [formControl]="connectwithusForm.controls['company']" name="company" type="text"
+                                class="w-50 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Project Type*</label><input
+                                [formControl]="connectwithusForm.controls['projecttype']" name="projecttype" type="text"
+                                class="w-50 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Email ID*</label><input
+                                [formControl]="connectwithusForm.controls['emailId']" name="emailId" type="text"
+                                class="w-50 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Contact*</label><input
+                                [formControl]="connectwithusForm.controls['contact']" name="contact" type="text"
+                                class="w-50 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-25">Your Message*</label><textarea
+                                [formControl]="connectwithusForm.controls['message']" name="message" type="text"
+                                class="w-50 form-control" rows="3"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <button type="submit" class="btn btn-dark rounded-pill w-25"
+                                (click)="SendEmail()">SEND</button>
+                            <p class="p-3">OR Enquire at <b>info@microprint.ca</b></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal modal-containermobile" id="modalContainerMobile" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-content">
+        <span class="modal-close" data-dismiss="modal">&times;</span>
+
+        <div class="container signageandgraphicdesign2" style="padding: 25px;">
+            <div class="row">
+                <div class="col-md-4 align-items-center text-start" style="border-right: solid 1px rgb(188, 187, 187);">
+                    <p class="text-start" style="color: #bdbbbb; font-weight: 900; font-size: 20px;">Let's Connect
+                    </p>
+                    <p style="font-size: 15px;">Still can’t find what you are looking for?<br>
+                        We can definitely help you out in person<br>
+                        or over the call!
+                        <br>
+                        <br>
+                        Just drop by our Main Office or Branch office,<br>
+                        Monday to Friday; 9AM to 5PM
+                    </p>
+                    <br>
+                    <button class="btn btn-dark rounded-pill">CALL US TODAY</button>
+                    <p class="m-2">+1 (306) 525 8878 | +1 (587) 524 9592 </p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7 text-start pl-4">
+                    <h2 style="font-weight: 600;" class="">Have a design, print, signage
+                        or wayfinding project in mind?</h2>
+                    <p class="mt-2" style="font-size: 18px;">Simply fill out your details and we will get back to
+                        you<br>
+                        in 5 -10 business days, or even quicker!</p>
+                    <form class="text-center">
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Your Name*</label><input type="text" class="w-75 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Company*</label><input type="text" class="w-75 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Project Type*</label><input type="text" class="w-75 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Email ID*</label><input type="text" class="w-75 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Contact*</label><input type="text" class="w-75 form-control"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;">
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="" class="w-50">Your Message*</label><textarea type="text"
+                                class="w-75 form-control" rows="3"
+                                style="height: 30px; border-color: #3d3d3d; background-color: #f4f4f4;"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <button type="submit" class="btn btn-dark rounded-pill w-75"
+                                style="color: white;">SEND</button>
+                            <p class="p-3">OR Enquire at <b>info@microprint.ca</b></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- about-us starts -->
+
+<section class=" hide_in_mobile about-us pb-6">
+    <!-- signageandgraphicdesign -->
+    <!-- <div class=""> -->
+    <!-- <div class=""> -->
+    <!-- <div  class=""> -->
+    <!-- <div class="home_carousel"> -->
+    <image-slider class="slider" [slides]="slides"></image-slider>
+    <!-- </div> -->
+
+
+    <div>
+        <img class="center_section" loading="lazy" src="assets/images/Updated_Images/Asset 3001.png" alt="">
+    </div>
+
+    <!-- home_page_settings -->
+
+    <!-- home_first_image -->
+    <div class="container-fluid    pb-4">
+        <!-- backOne -->
+        <!-- about-image-box  -->
+        <!-- image_overlay -->
+        <!-- <div class="  "> -->
+        <div class="fsection row d-flex align-items-center justify-content-between">
+            <div class="col-lg-5  mb-4">
+                <img class="microprint_img" loading="lazy"
+                    src="assets/images/Updated_Images/Screenshot 2024-05-17 075444.png" alt="">
+            </div>
+            <div class="col-lg-6  pt-4">
+                <div class="about-content">
+                    <p class="border-b mb-2 pb-2   microprint_discription"
+                        style="font-family: 'regular', sans-serif !important; color: rgb(106, 103, 103);"> Microprint is a unique design &
+                        fabrication studio
+                        with a strong focus on signage and print media
+                        which dramatically impacts the perception of each
+                        and every individual with respect to the environment
+                        & their surroundings.
+                    </p>
+
+                </div>
+
+                <div class="about-content">
+                    <p class="border-b mb-2 pb-2   microprint_discription"
+                        style="font-family: 'regular', sans-serif !important; color: rgb(106, 103, 103);"> Most of our print media
+                        applications are
+                        reflected on Vehicle Decals, flyers, brochures,
+                        posters, banners, vinyl graphics, glass graphics,
+                        stationary collectibles, cheque printing,
+                        magnet decals & apparels.
+                    </p>
+
+                </div>
+                <div class="about-content">
+                    <p class="border-b mb-2 pb-2   microprint_discription"
+                        style="font-family: 'regular', sans-serif !important; color: rgb(106, 103, 103);"> With a constant growing demand for
+                        branding signages, we are proud to have
+                        a dedicated team that thrives to create a
+                        visual experience in terms of design, fabrication
+                        & installation for channel letters, box signs,
+                        lit signs, neon signs, and more...
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-12">
+            </div>
+        </div>
+        <!-- </div> -->
+
+    </div>
+    <!-- </div> -->
+
+    <div>
+        <img loading="lazy" src="assets/images/Updated_Images/Asset 8.png" alt="" class="first_image_between_section">
+    </div>
+
+
+    <!-- signageandgraphicdesignForFooter -->
+    <div class=" what_we_do_section_new">
+        <div class="about-image-box">
+            <div class="row d-flex align-items-center justify-content-between">
+
+
+                <div class="col-lg-3">
+                    <img loading="lazy" class="hide_in_mobile what_we_do_new"
+                        src="assets/images/Updated_Images/Asset 11.png" alt="">
+                </div>
+                <!-- <div class="col-lg-3 col-sm-12 mb-4 mt-3 ">
+                    <h2 class="m-0 what_we_do h2 wwd" style="color: rgb(27, 41, 71);"><b>What We Do.</b></h2>
+                    <div class="about-image p-3 mt-3 box-shadow position-relative wwdcarousel">
+                        <div class="home_carousel2">
+                            <image-slidersmall class="carousel2" [slides2]="slides2"></image-slidersmall>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-5 col-sm-12  mb-4 mt-8">
+                    <!-- h2 -->
+                    <h2 class="m-0 what_we_do wwd heading_fo_mobile2"
+                        style="color: rgb(27, 41, 71); font-family: 'maermaid' !important;"><b>WHAT WE DO.</b></h2>
+                    <div class="about-content2">
+                        <!-- h4 -->
+                        <!-- <img class="point_2" src="assets/images/Updated_Images/Asset 203.png" alt=""> -->
+                        <p class="border-b mb-2 pb-2 whatwedo_discription wwddiscription"
+                            style="font-family: 'regular', sans-serif !important; color: rgb(106, 103, 103);"> Our process is basically a
+                            journey that begins
+                            with ideation & planning, design exploration,
+                            design development, mock ups, fabrication,
+                            & lastly final product installation.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="about-content2">
+                        <!-- <img class="point_2" src="assets/images/Updated_Images/Asset 203.png" alt=""> -->
+                        <p class="border-b mb-2 pb-2 whatwedo_discription wwddiscription"
+                            style="font-family: 'regular', sans-serif !important; color: rgb(106, 103, 103);"> We strictly adhere to the brand
+                            guidelines set
+                            by the company client along with providing a
+                            visually appealing product that narrates the
+                            brand’s story.<br>
+                        </p>
+                    </div>
+                    <!-- <img class="what_we_do_pic3" src="assets/images/image 4 - 3SW - Home Page.png" alt=""> -->
+                </div>
+                <div class="col-lg-4 mt-7">
+                    <!-- <img class="hide_in_mobile what_we_do_pic" src="assets/images/image 5 - 3SW - Home Page.png" alt=""> -->
+                    <img loading="lazy" class="hide_in_mobile asset_9" src="assets/images/Updated_Images/Asset 9.png"
+                        alt="">
+                    <!-- <img class="hide_in_mobile what_we_do_pic2" src="assets/images/image 6 - 3SW - Home Page.png"
+                        alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <img loading="lazy" class="center_section" src="assets/images/Updated_Images/Asset 3001.png" alt="">
+    </div>
+
+    <!-- backOne -->
+    <div class=" topservice">
+        <div class="container-fluid pb-1" style="margin-top: 0px;">
+            <p class="" style="font-size: 60px; font-weight: 700; font-family: 'maermaid' !important;">Top Services</p>
+            <div class="row top_service_img_index">
+                <img loading="lazy" src="assets/images/Updated_Images/Asset 13.png" alt="">
+
+            </div>
+            <div class="full_cover_area">
+                <a class="flink" routerLink="/graphic-design"></a>
+                <a class="slink" routerLink="/signage-wayfinding"></a>
+                <a class="tlink" routerLink="/print-media"></a>
+                <a class="folink" routerLink="/print-media"></a>
+                <a class="filink" routerLink="/digital-marketing"></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+
+
+
+    <!-- topservice -->
+    <div class="after_top_service_img">
+        <div class="pb-8" style="margin-top: 0px;">
+            <div class="row  ">
+                <img loading="lazy" src="assets/images/Updated_Images/Asset 14.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- stay_update_new -->
+    <div class="backOne_stay_update_home_page ">
+        <div class=" stay_update">
+            <div class="col-md-4">
+                <p class="rotated-text" style=" font-weight: 700; font-family: 'maermaid' !important;">TESTIMONIALS</p>
+                <img loading="lazy" class=" stay_update_img" src="assets/images/Updated_Images/Asset 15.png" alt="">
+            </div>
+
+            <div class="col-md-5">
+                <div class="mb-4 pb-1 ">
+                    <!-- <h2 class="m-0 what_we_do h2" style="color: rgb(27, 41, 71);"><b>Stay Updated!</b></h2> -->
+                    <div class="d-flex  mt-2">
+                        <!-- <div style="width: 100px; border-top: solid 10px rgb(211, 80, 158);"></div>
+                        <div style="width: 100px; border-top: solid 10px rgb(218, 218, 83);"></div>
+                        <div style="width: 100px; border-top: solid 10px rgb(64, 188, 64);"></div> -->
+                        <img loading="lazy" class="asset_16" src="assets/images/Updated_Images/Asset 16.png" alt="">
+                    </div>
+                    <!-- <p class="mt-3 h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                </div>
+                <div class="recent-articles-inner">
+                    <div class="row stayupdate_for_big_screen">
+
+
+                        <div class="col-lg-12 mb-4">
+                            <p class="h3" style="font-size: 30px; font-weight: 100; font-family: 'regular', sans-serif !important;">
+                                "When I started working with Microprint, I gave them VERY specific vision for
+                                my branding, and they exceeded every expectation. Not only was their work
+                                high-quality from the start, but was so SPEEDY. I ended up adding on more
+                                projects because I loved the vision Microprint brought. I've referred mciroprint
+                                to other business owners, and can't wait to work with them again!"</p>
+                            <p class="" style="font-size: 33px; font-weight: 600; font-family: 'regular' !important;">
+                                DREAM CLIENT I CEO OF CITY VIEW
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img loading="lazy" class="hide_in_mobile stay_update_img_right"
+                    src="assets/images/Updated_Images/Asset 17.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <img loading="lazy" class="center_section" src="assets/images/Updated_Images/Asset 3001.png" alt="">
+    </div>
+
+    <!-- </div> -->
+    <!-- </div> -->
+</section>
+<!-- about-us ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hide_in_pc about-us pb-6">
+    <!-- signageandgraphicdesign -->
+    <div class="">
+        <div class="">
+            <div class="home_carousel">
+                <image-slider [slides]="slides"></image-slider>
+            </div>
+
+            <div>
+                <img loading="lazy" class="center_section_22" src="assets/images/Updated_Images/Asset 3001.png" alt="">
+            </div>
+
+
+            <div>
+                <!-- <img class="center_section_mobile" src="assets/images/Updated_Images/Asset 3001.png" alt=""> -->
+                <img loading="lazy" class="center_section_mobile"
+                    src="assets/images/Updated_Images/Screenshot 2024-05-17 075444.png" alt="">
+            </div>
+            <div class="container-fluid   pb-4" style="margin-top: 0%;">
+                <div class="about-image-box mt-6 ">
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <!-- <div class="col-lg-6 col-sm-12 mb-4">
+                            <div class="about-image  box-shadow ">
+                                <p class="heading_fo_mobile align-self-center  mb-2"
+                                    style="font-size: 50px; font-weight: 700; font-family: 'maermaid' !important;">
+                                    Microprint</p>
+                                <p class="second_heading_for_mobile "
+                                    style="font-weight: 700;font-family: 'mermaid', sans-serif !important;">Specializes
+                                    in Print
+                                    Media,<br>
+                                    Signage & Graphic Design</p>
+                                <img src="assets/images/first.png" alt="" class="w-100">
+                            </div>
+                        </div> -->
+                        <div class="col-lg-3 col-sm-12 mb-4">
+                            <div class="about-content">
+                                <p class="border-b mb-2 pb-2  mobilediscription "
+                                    style="font-size: 20px; font-family: 'regular', sans-serif !important;">Microprint
+                                    is a unique design &
+                                    fabrication
+                                    studio with a strong focus on signage and
+                                    print media which dramatically impacts
+                                    the perception of each and every individual
+                                    with respect to the environment & their
+                                    surroundings.<br>
+                                    <br>
+                                    Most of our print media applications are
+                                    reflected on Vehicle Decals, flyers, brochures,
+                                    posters, banners, vinyl graphics, glass graphics,
+                                    stationary collectibles, cheque printing,
+                                    magnet decals & apparels.<br>
+                                    <br>
+                                    With a constant growing demand for
+                                    branding signages, we are proud to have
+                                    a dedicated team that thrives to create a
+                                    visual experience in terms of design, fabrication
+                                    & installation for channel letters, box signs,
+                                    lit signs, neon signs, and more...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-12 mb-4">
+                            <img loading="lazy" class="hide_in_mobile" style="margin-top: -550px; "
+                                src="assets/images/image 2 - 2SS - Home Page.png" alt="" width="300">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <img loading="lazy" src="assets/images/Updated_Images/Asset 8.png" alt=""
+                    class="first_image_between_section_mobile">
+            </div>
+            <div class="whatwedo_mobile">
+                <div class="about-image-box">
+                    <div class="row d-flex align-items-center justify-content-between">
+
+
+                        <div class="col-md-2">
+                            <img loading="lazy" class="hide_in_mobile" src="assets/images/demo-27.png" alt="">
+                        </div>
+                        <div class="col-md-7 ">
+                            <p class="m-0 what_we_do "
+                                style="color: black; font-size: 30px; font-weight: 700; font-family: 'maermaid' !important;">
+                                <b>What
+                                    We Do.</b>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 mobile_what_we_do">
+                            <div class="about-content">
+                                <!-- whatwedo_discription -->
+                                <p class="border-b mb-2 pb-2 mobilediscription"
+                                    style="font-size: 20px; font-family: 'regular', sans-serif !important;">Our process
+                                    is basically a
+                                    journey that begins
+                                    with ideation & planning, design exploration,
+                                    design development, mock ups, fabrication,
+                                    & lastly final product installation.
+                                    <br>
+                                    <br>
+                                    We strictly adhere to the brand guidelines set
+                                    by the company / client along with providing a
+                                    visually appealing product that narrates the
+                                    brand’s story.<br>
+                                </p>
+                            </div>
+                            <img loading="lazy" class="asset_9" src="assets/images/Updated_Images/Asset 9.png" alt="">
+                        </div>
+                        <!-- <div class="col-md-3">
+                            <img class="hide_in_mobile" src="assets/images/demo_28.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <img loading="lazy" class="center_section" src="assets/images/Updated_Images/Asset 3001.png" alt="">
+            </div>
+
+            <div class=" topservice">
+                <div class="container pb-2" style="margin-top: 50px;">
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <img loading="lazy" class="hide_in_mobile" src="assets/images/image 3 - 4ST - Home Page.png"
+                                alt="">
+                            <img loading="lazy" class="hide_in_mobile" src="assets/images/image 4 - 4ST - Home Page.png"
+                                alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="why-us ">
+                                <div class="why-us-box">
+                                    <div class="mb-6 pb-1 w-75  mx-auto"></div>
+                                    <p class="m-0  "
+                                        style="color: black; font-size: 30px;  font-weight: 700; font-family: 'maermaid' !important;">
+                                        <b>Top Services</b>
+                                    </p>
+                                    <!-- <div class="d-flex  mt-2">
+                                        <div style="width: 100px; border-top: solid 10px rgb(211, 80, 158);"></div>
+                                        <div style="width: 100px; border-top: solid 10px rgb(218, 218, 83);"></div>
+                                        <div style="width: 100px; border-top: solid 10px rgb(64, 188, 64);"></div>
+                                    </div> -->
+                                </div>
+                                <div class="row mt-3 top_services_mobile">
+                                    <div class="col-md-6 one">
+                                        <div class="text-center">
+                                            <div class="d-flex" (click)="changePage('grapic_design')">
+                                                <img loading="lazy" class="top_1_img"
+                                                    src="assets/images/TS - ICON 1.png" width="50" alt="">
+                                                <p class="pt-2 px-1 mobilediscription"
+                                                    style=" font-weight: 400; font-family: 'regular',sans-serif !important;">
+                                                    GRAPHIC DESIGN
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 two">
+                                        <div class="text-center">
+                                            <div class="d-flex" (click)="changePage('signage_wayfinding')">
+                                                <img loading="lazy" class="top_1_img"
+                                                    src="assets/images/TS - ICON 2.png" width="40" alt="">
+                                                <p class="pt-2 px-1 mobilediscription"
+                                                    style=" font-weight: 400; font-family: 'regular',sans-serif !important;">
+                                                    SIGNAGE & WAYFINDING
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 three">
+                                        <div class="text-center">
+                                            <div class="d-flex" (click)="changePage('digital_marketing')">
+                                                <img loading="lazy" class="top_1_img"
+                                                    src="assets/images/TS - ICON 5.png" width="40" alt="">
+                                                <p class="pt-2 px-1 mobilediscription"
+                                                    style=" font-weight: 400; font-family: 'regular',sans-serif !important;">
+                                                    DIGITAL MARKETING
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2 four">
+                                        <div class="text-center">
+                                            <div class="d-flex" (click)="changePage('wideformat_printing')">
+                                                <img loading="lazy" class="top_1_img"
+                                                    src="assets/images/TS - ICON 3.png" width="40" alt="">
+                                                <p class="pt-2 px-1 mobilediscription"
+                                                    style=" font-weight: 400; font-family: 'regular',sans-serif !important;">
+                                                    WIDEFORMAT PRINTING
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2 five">
+                                        <div class="text-center" (click)="changePage('print_media')">
+                                            <div class="d-flex">
+                                                <img loading="lazy" class="top_1_img"
+                                                    src="assets/images/TS - ICON 4.png" width="40" alt="">
+                                                <!-- class="flaticon-building" -->
+                                                <p class="pt-2 px-1  mobilediscription"
+                                                    style=" font-weight: 400; font-family: 'regular',sans-serif !important;">
+                                                    PRINT MEDIA
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <p class="mt-3 mb-3 topservice_discription h4" style="font-size: 18px;">We can elevate
+                                    and empower your brand
+                                    to
+                                    win
+                                    hearts and minds through distinctive positioning. Whether it is a
+                                    fresh new brand you are looking for or a refresh to a well-established trade
+                                    name,
+                                    we
+                                    are here to help!</p> -->
+                                <!-- <div class="row mt-4 ">
+                                    <div class="col-md-5 letconnectbtn">
+                                        <button class="rounded-pill w-75 btn btn-dark" id="openModal"
+                                            data-toggle="modal" data-target="#modalContainerMobile">CONNECT WITH
+                                            US</button>
+                                    </div>
+                                    <div class="col-md-5 letconnectbtnquote">
+                                        <p class="h4">Get a quote
+                                            or just drop by our office </p>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-md-3 hide_in_mobile">
+                            <!-- for_TopServicedesign -->
+                            <img loading="lazy" class="hide_in_mobile" src="assets/images/image 8 - 4ST - Home Page.png"
+                                alt="" width="200">
+                            <img loading="lazy" class="image_overlay_for_TopService hide_in_mobile"
+                                src="assets/images/image 9 - 4ST - Home Page.png" alt="" width="200">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class=" ">
+            <div class="pb-8" style="margin-top: 20px;">
+                <div class="row  ">
+                    <img loading="lazy" class="after_top_service_img_mobile"
+                        src="assets/images/Updated_Images/Asset 14.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class=" our_Esteemed_Clients" style="margin-top: 150px;">
+            <div class="container  ">
+                <div class="row our_Esteemed_Clients">
+                    <div class="col-md-2 ">
+                        <img class="img_in_mobile " src="assets/images/image 5 - 4ST - Home Page.png" alt="" width="120"
+                            style="margin-left: -80px;">
+                        <img class="img_in_mobile hide_in_mobile mt-8" class="mt-6"
+                            src="assets/images/image 10 - 5SO - Home Page.png" alt="" style="width: 300px !important">
+                    </div>
+                    <div class="col-md-7 ">
+                        <div class="about-image-box">
+                            <div class="mb-10">
+                                <h2 class="m-0" style="color: black;"><b>Our Esteemed Cients</b>
+                                </h2>
+                                <div class="d-flex mt-2">
+                                    <div style="width: 100px; border-top: solid 10px rgb(211, 80, 158);">
+                                    </div>
+                                    <div style="width: 100px; border-top: solid 10px rgb(218, 218, 83);">
+                                    </div>
+                                    <div style="width: 100px; border-top: solid 10px rgb(64, 188, 64);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partner-wrapper p-2">
+                                <div class="sliderDH">
+                                    <div class="slide-trackDH">
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-1.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-2.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-3.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-4.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-5.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-3.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-4.png" alt="">
+                                        </div>
+                                        <div class="slideDH">
+                                            <img class="imgDH" src="assets/images/cl-5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="p-3">We share our gratitude towards all the clients and teams we have
+                                partnered
+                                with,
+                                who have believed in us and
+                                provided constant support, a source of inspiration & encouragement.
+                            </p>
+                            <div class="row justify-content-between">
+                                <div class="col-md-2 p-2" style="background-color: black; color: white;">
+                                    <div class="counter-item  align-self-center text-center ">
+                                        <div class="counter-content">
+                                            <h4 class="value mb-0">650</h4>
+                                            <span class="m-0">Clients</span>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-10">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-4" style="border-top: 5px solid rgb(240, 88, 113);">
+                                        </div>
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 p-2" style="background-color: black; color: white;">
+                                    <div class="counter-item align-self-center text-center ">
+                                        <div class="counter-content ">
+                                            <p class="m-0">Across 3 Major Cities in <b
+                                                    style="font-size: 15px;">Alberta</b></p>
+                                            <p class="m-0">Regina, Edmonton, Calgary</p>
+                                        </div>
+                                    </div>
+                                    <div class="row p-4">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4" style="border-top: 5px solid rgb(238, 238, 95);">
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 p-2" style="background-color: black; color: white;">
+                                    <div class="counter-item align-self-center text-center ">
+                                        <div class="counter-content">
+                                            <h4 class="value mb-0">970</h4>
+                                            <span class=" m-0">Projects</span>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-10">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-4" style="border-top: 5px solid rgb(45, 117, 45);">
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 " style="background-color: black; color: white;">
+                                    <div class="counter-item align-self-center text-center ">
+                                        <div class="counter-content ">
+                                            <p class="m-0">Affilited Member of <b
+                                                    style="font-size: 15px;">ASA</b><br>Alberta Sign
+                                                Association</p>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-5">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4" style="border-top: 5px solid rgb(55, 212, 215);">
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex pt-6">
+                                    <img src="assets/images/image 13 - 5SO - Home Page.png" alt="" width="300"
+                                        style="margin-left: 400px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <img class="hide_in_mobile" style="margin-left:67px;"
+                            src="assets/images/image 11 - 5SO - Home Page.png" alt="" width="150">
+                        <img class="hide_in_mobile" style="margin-top: -220px; margin-left: 150px;"
+                            src="assets/images/image 12 - 5SO - Home Page.png" alt="" width="120">
+                    </div>
+                </div>
+
+
+            </div>
+        </div> -->
+
+        <!-- <div class=" mobile_stay_update" style="margin-top: 50px;">
+            <div class="stay_update">
+                <div class="col-md-2">
+                    <img class="hide_in_mobile" src="assets/images/image 3 - 6SSC - Home Page.png" alt="">
+                </div>
+
+                <div class="col-md-7">
+                    <h2 class="m-0 what_we_do h3 " style="color: rgb(27, 41, 71);"><b>Stay Updated!</b></h2>
+                    <div class="d-flex  mt-2">
+                        <div style="width: 100px; border-top: solid 10px rgb(211, 80, 158);"></div>
+                        <div style="width: 100px; border-top: solid 10px rgb(218, 218, 83);"></div>
+                        <div style="width: 100px; border-top: solid 10px rgb(64, 188, 64);"></div>
+                    </div>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="recent-articles-inner">
+                        <div class="stayupdate_for_mobile">
+                            <div class="home_carousel2">
+                                <image-slidersmall2 [slides3]="slides3"></image-slidersmall2>
+                            </div>
+                            <div class="stayupadterow">
+                                <p class="stayupdatediscription h4">Each and every project has been
+                                    a joyful journey with creative
+                                    outcomes and we share it with the world! <br> Have a glimpse of our latest jobs and
+                                    check out more posts on our social media
+                                    handles.
+                                    <br>
+                                    <br>
+                                    <i class="fab fa-facebook black" aria-hidden="true"></i> &nbsp;<i
+                                        class="fab fa-instagram black" aria-hidden="true"></i>&nbsp; follow for
+                                    regular
+                                    updates
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row stayupdate_for_big_screen">
+                            <div class="col-lg-3 mb-4">
+                                <div class="trend-item box-shadow  p-4">
+                                    <div class="trend-image">
+                                        <img src="assets/images/stay_update_1.png" alt="image">
+                                    </div>
+                                    <div class="trend-content-main pt-3">
+                                        <div class="trend-content">
+
+                                            <p class="mb-3">
+                                                A wonderful<br>serenity has<br>taken possession<br>of my entire
+                                                soul,<br>
+                                                like
+                                                these
+                                                sweet<br>
+                                                mornings of spring which I<br>enjoy.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 mb-4">
+                                <div class="trend-item box-shadow  p-4">
+                                    <div class="trend-image">
+                                        <img src="assets/images/stay_update_2.png" alt="image">
+                                    </div>
+                                    <div class="trend-content-main pt-3">
+                                        <div class="trend-content">
+
+                                            <p class="mb-3">
+                                                A wonderful<br>serenity has<br>taken possession<br>of my entire
+                                                soul,<br>
+                                                like
+                                                these
+                                                sweet<br>
+                                                mornings of spring which I<br>enjoy.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-4">
+                                <p>Each and every project has been<br>a joyful
+                                    journey with creative<br>outcomes and we share it<br>
+                                    with the world!</p>
+                                <p>Have a glimpse of our latest jobs<br>and check out
+                                    more posts<br>on our social media handles.</p>
+                                <p><i class="fab fa-facebook black" aria-hidden="true"></i> &nbsp;<i
+                                        class="fab fa-instagram black" aria-hidden="true"></i>&nbsp; follow for
+                                    regular
+                                    updates
+                                </p>
+                                <div class="d-flex pt-4">
+                                    <img src="assets/images/image 5 - 6SSC - Home Page.png" alt="" width="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="hide_in_mobile" src="assets/images/image 6 - 6SSC - Home Page.png" alt=""
+                        style="margin-bottom: -150px;">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class=" stay_update_new">
+            <div class=" stay_update">
+                <div class="col-md-4">
+                    <p class="rotated-text_mobile" style=" font-weight: 700; font-family: 'maermaid' !important;">
+                        TESTIMONIALS</p>
+                    <img loading="lazy" class=" stay_update_img_mobile" src="assets/images/Updated_Images/Asset 15.png"
+                        alt="">
+                </div>
+                <div class="col-md-5">
+                    <div class="mb-4 pb-1 ">
+                        <div class="d-flex  mt-2">
+                            <img loading="lazy" class="asset_16_mobile" src="assets/images/Updated_Images/Asset 16.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="recent-articles-inner_mobile">
+                        <div class=" ">
+                            <div class="col-lg-12 mb-4">
+                                <p class=" mobilediscription"
+                                    style="font-size: 20px; font-family: 'regular', sans-serif !important;">"When I
+                                    started working with Microprint, I gave them VERY specific vision
+                                    for
+                                    my branding, and they exceeded every expectation. Not only was their work
+                                    high-quality from the start, but was so SPEEDY. I ended up adding on more
+                                    projects because I loved the vision Microprint brought. I've referred mciroprint
+                                    to other business owners, and can't wait to work with them again!"</p>
+                                <p class=""
+                                    style="font-size: 30px; font-weight: 600; font-family: 'regular' !important;">
+                                    DREAM CLIENT I CEO OF CITY VIEW
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img loading="lazy" class="hide_in_mobile stay_update_img_right"
+                        src="assets/images/Updated_Images/Asset 17.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <img loading="lazy" class="center_section_mobile_img" src="assets/images/Updated_Images/Asset 3001.png"
+                alt="">
+        </div>
+
+
+
+
+
+
+    </div>
+</section>
+
+
+<app-footer></app-footer>

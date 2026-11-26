@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'lights';
+    src: local("assets/fonts/new/FUTURA45LIGHT.TTF");
+}
+
+@font-face {
+    font-family: 'bolds';
+    src: local("assets/fonts/new/FUTURA75BOLD.TTF");
+}
+
+@font-face {
+    font-family: 'mediums';
+    src: local("assets/fonts/new/FUTURA65MEDIUM.TTF");
+}
+
+@font-face {
+    font-family: 'regular';
+    src: local("assets/fonts/new/FUTURA55REGULAR.TTF");
+}
+
+@font-face {
+    font-family: 'mermaid';
+    src: local("assets/fonts/new/Mermaid1001.ttf");
+}
+
+.top_service_fontmedium {
+    font-family: 'lights';
+}
+
+
+p {
+    font-family: 'lights';
+}
+
+h2 {
+    font-family: 'bolds';
+}
+
+h3 {
+    font-family: 'bolds';
+}
+
+h4 {
+    font-family: 'bolds';
+}
+
+h5 {
+    font-family: 'bolds';
+}
+
+h6 {
+    font-family: 'bolds';
+}
+
+h1 {
+    font-family: 'bolds';
+}
+
+
+
+.mobile_menu1 {
+    display: none !important;
+}
+
+.pc_menu {
+    display: block !important;
+}
+
+@media (max-width:700px) {
+    .mobile_menu1 {
+        display: block !important;
+    }
+
+    .pc_menu {
+        display: none !important;
+    }
+
+
+}
+
+@media (max-width:1330px) {
+    .second_section {
+        margin-left: -5%;
+    }
+
+}
+
+.navbar-flex {
+    width: 100% !important;
+}
+
+.second_section {
+    margin-left: 17%;
+}
+
+
+
+@media (min-width:1800px) {
+    .second_section {
+        margin-left: 30%;
+    }
+
+}

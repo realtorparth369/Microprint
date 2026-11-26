@@ -1,0 +1,396 @@
+
+@font-face {
+    font-family: 'lights';
+    src: local("assets/fonts/new/FUTURA45LIGHT.TTF");
+}
+
+@font-face {
+    font-family: 'bolds';
+    src: local("assets/fonts/new/FUTURA75BOLD.TTF");
+}
+
+@font-face {
+    font-family: 'mediums';
+    src: local("assets/fonts/new/FUTURA65MEDIUM.TTF");
+}
+
+@font-face {
+    font-family: 'regular';
+    src: local("assets/fonts/new/FUTURA55REGULAR.TTF");
+}
+
+@font-face {
+    font-family: 'mermaid';
+    src: local("assets/fonts/new/Mermaid1001.ttf");
+}
+
+.top_service_fontmedium {
+    font-family: 'lights';
+}
+
+
+p {
+    font-family: 'lights';
+}
+
+h2 {
+    font-family: 'bolds';
+}
+
+h3 {
+    font-family: 'bolds';
+}
+
+h4 {
+    font-family: 'bolds';
+}
+
+h5 {
+    font-family: 'bolds';
+}
+
+h6 {
+    font-family: 'bolds';
+}
+
+h1 {
+    font-family: 'bolds';
+}
+
+
+
+
+
+.home_carousel{
+    width: 100%; 
+    height: 600px; 
+    margin-top: -45px;
+    /* margin: 0 auto */
+}
+
+
+@media (max-width:700px) {
+    .home_carousel{
+        width: 100%; 
+        height: 400px; 
+        margin-top: -45px;
+        /* margin: 0 auto */
+    }
+}
+
+.signange_wayfinding_img{
+    width: 100%;
+    height: 100%;
+    /* margin-left: 10%; */
+}
+
+.sig_wayfin_descr{
+    padding-right: 10%;
+}
+
+.signange_wayfinding_1_img{
+    width: 100%;
+    height: 80%;
+}
+
+.signange_wayfinding_2_img{
+    width: 100%;
+    height: 80%;
+}
+
+
+.chnl_letters{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.chnl_descr{
+    padding-left: 10%;
+}
+
+.channel_letters_1_img{
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    margin-top: -8%;
+}
+
+.channel_letters_2_img{
+    width: 10%;
+    height: 25%;
+    margin-left: 20%;
+    margin-right: -20%;
+}
+
+.channel_letters_3_img{
+    width: 20%;
+    height: 40%;
+    margin-top: 15%;
+    margin-left: -10%;
+    margin-right: 25%;
+}
+
+.channel_letters_3_img_mobile{
+    width: 60%;
+    height: 40%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 25%;
+    padding-bottom: 15%;
+}
+
+/* .chnnel_two_2_imgs{
+    margin-right: -80%;
+} */
+
+.channel_letters_4_img{
+    width: 25%;
+    height: 80%;
+    /* margin-top: -30%; */
+    margin-left: 15%;
+    margin-right: -14%;
+}
+
+.channel_letters_5_img{
+    width: 20%;
+    height: 70%;
+    /* margin-top: -30%; */
+    /* margin-left: 5%; */
+}
+
+.box_signs{
+    /* padding-top: -5%; */
+    /* padding-bottom: 3%; */
+}
+
+.box_signs_1_img{
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.box_signs_2_img{
+    width: 50%;
+    height: 50%;
+    margin-left: -16%;
+    margin-top: 10%;
+}
+
+.box_signs_2_img_mobile{
+    width: 90%;
+    height: 40%;
+    margin-left: 3%;
+    margin-right: 6%;
+    margin-top: 10%;
+    padding-bottom: 15%;
+}
+
+/* .pylon_signs{
+    height: 100% !important;
+    padding-left: 3%;
+    padding-right: 3%;
+} */
+
+
+.col_img{
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+    height: 83%;
+    margin-left: 70%;
+}
+
+.pylonsigns_1_img{
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    /* margin-bottom: 0; */
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+.pylonsigns_1_img_mobile{
+    width: 55%;
+    height: 43%;
+    margin-left: 20%;
+    /* margin-bottom: 0; */
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+.pylonsigns_2_img{
+    width: 100%;
+    height: 83%;
+    margin-left: 12%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden !important;
+}
+
+.pylonsigns_3_img{
+    width: 70%;
+    height: 30%;
+    margin-left: 25%;
+    z-index: 1;
+    /* transform: rotate(45deg); */
+    rotate: calc(90deg);
+}
+
+.pylonsigns_4_img{
+    width: 100%;
+    height: 70%;
+    /* margin-left: 25%; */
+    z-index: 1;
+}
+
+.pylon_decr{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+}
+
+.neon_signs_descr{
+    /* vertical-align: middle; */
+    justify-content:center ;
+    padding-top: 7%;
+    padding-LEFT: 4%;
+    padding-right: 10%;
+}
+
+@media (min-width:1800px){
+    .neon_signs_descr{
+        justify-content:center ;
+        padding-top: 5%;
+        padding-LEFT: 4%;
+        padding-right: 10%;
+    }
+}
+
+.neon_signs{
+    margin-top: -7%;
+}
+
+.box_signs_descr{
+    padding-top: 10%;
+    padding-right: 5%;
+}
+
+.neon_signs_1_img{
+    width: 100%;
+    height: 80%;
+}
+
+.neon_signs_1_img_mobile{
+    padding-top: 15%;
+    width: 100%;
+    height: 40%;
+}
+
+.box_signs_main{
+    margin-top: -12.5% !important;
+}
+
+.lit_signs{
+    margin-top: -8% !important;
+}
+
+
+.pylon_signs,  .chennal_letters_main{
+    margin-top: -9.9%;
+}
+
+.lit_signs_descr{
+    justify-content:center ;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.lit_signs_1_img{
+    width: 100%;
+    height: 95%;
+}
+
+
+.signagedesc{
+    padding-right: 10%;
+}
+
+.wayfinding_signs_1_img{
+    width: 100%;
+    height: 100%;
+}
+
+.wayfinding_signs_2_img{
+    width: 40%;
+    height: 11%;
+    margin-left: 60%;
+}
+
+.wayfinding_signs_4_img{
+    width: 100%;
+    height: 11%;
+    margin-left: 30%;
+    margin-top: 18%;
+    position: absolute;
+}
+
+.wayfinding_signs_3_img{
+    width: 40%;
+    height: 20%;
+    margin-top: 2%;
+    margin-left: 60%;
+}
+
+
+.center_section{
+    width: 100%;
+}
+
+.center_section_1{
+    width: 100%;
+    margin-top: -12%;
+}
+
+.center_section_2{
+    width: 100%;
+    margin-top: -27%;
+}
+
+.center_section_3{
+    width: 100%;
+    margin-top: 0%;
+}
+
+.center_section_5{
+    width: 100%;
+    margin-top: -18%;
+}
+
+.center_section_6{
+    width: 100%;
+    margin-top: -2.5%;
+}
+
+.center_section_7{
+    width: 100%;
+    margin-top: -0%;
+}
+
+
+
+.center_section_mobile{
+    margin-top: 66% !important;
+}
+
+
+.center_section_mobile_1{
+    margin-top: 5%;
+}
+
+.center_section_mobile_12{
+    margin-top: 12%;
+}

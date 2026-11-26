@@ -1,0 +1,272 @@
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  margin-top: -50px !important;
+  /* background-position: center; */
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+.dotsContainer {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.dottt {
+  margin: 105px 3px;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+}
+
+.slidetext {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  margin-left: 27%;
+  margin-top: 8%;
+  /* margin: auto; */
+}
+
+.center {
+  align-self: center;
+}
+
+.name {
+  margin-top: -30%;
+  font-size: 150px;
+  color: #fff;
+  font-weight: 800;
+  align-items: center;
+  margin-left: 32%;
+}
+
+.name2 {
+  margin-top: -1%;
+  font-size: 170px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  font-weight: 800;
+  align-items: center;
+  margin-left: 34%;
+
+}
+
+
+@font-face {
+  font-family: monsterratBold;
+  src: local("assets/fonts/Montserrat-Bold.ttf");
+}
+
+h2 {
+  font-family: monsterratBold;
+  /* font-family: monsterrat;
+  src: url(assets/fonts/Montserrat-Bold.ttf) !important;
+  color: rgb(13, 62, 92) !important; */
+}
+
+h3 {
+  font-family: monsterratBold;
+}
+
+h4 {
+  font-family: monsterratBold;
+}
+
+h5 {
+  font-family: monsterratBold;
+}
+
+h6 {
+  font-family: monsterratBold;
+}
+
+h1 {
+  font-family: monsterratBold;
+}
+
+.center2 {
+  display: none;
+}
+
+.leftArrow2 {
+  display: none;
+}
+
+.rightArrow2 {
+  display: none;
+}
+
+
+/* @media (min-width:1850px) {
+  .name {
+    padding-top: -100% !important;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 800;
+    align-items: center;
+    margin-left: 38%;
+  }
+
+  .name2 {
+    margin-top: -20px;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    font-weight: 800;
+    align-items: center;
+    margin-left: 38%;
+  }
+} */
+
+
+@media (max-width: 1800px) {
+  .name {
+    margin-top: -30%;
+    font-size: 120px;
+    color: #fff;
+    font-weight: 800;
+    align-items: center;
+    margin-left: 30%;
+  }
+
+  .name2 {
+    margin-top: -1%;
+    font-size: 130px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    font-weight: 800;
+    align-items: center;
+    margin-left: 32%;
+  }
+
+  .slidetext {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 25%;
+    /* margin: auto; */
+  }
+}
+
+
+@media (max-width:700px) {
+  .slide {
+    width: 100%;
+    height: 130%;
+    border-radius: 10px;
+    background-size: cover;
+    /* background-position: center; */
+  }
+
+  .dotsContainer {
+    display: flex;
+    margin-top: -80px;
+    justify-content: center;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .leftArrow {
+    display: none;
+  }
+
+  .rightArrow {
+    display: none;
+  }
+
+  .leftArrow2 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -50%);
+    left: 12px;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .rightArrow2 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -50%);
+    right: 12px;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .center2 {
+    display: block;
+    align-self: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .slidetext2 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 11%;
+    margin-top: 20%;
+    /* width: 100px !important; */
+  }
+
+  .name21 {
+    margin-top: -400px !important;
+    font-size: 50px !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+    align-items: center !important;
+    margin-left: 15% !important;
+  }
+
+  .name22 {
+    margin-top: 10px !important;
+    font-size: 50px !important;
+    color: transparent !important;
+    -webkit-text-stroke-width: 3px !important;
+    -webkit-text-stroke-color: white !important;
+    font-weight: 800 !important;
+    align-items: center !important;
+    margin-left: 21% !important;
+  }
+
+}
